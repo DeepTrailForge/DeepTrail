@@ -10,6 +10,8 @@ We build smart, minimalistic extensions and tools that empower traders to naviga
 - **Twitter**: [@DeeptrailForge](https://twitter.com/DeeptrailForge)
 - **GitHub**: [Deeptrail GitHub](https://github.com/DeeptrailForge)
 - **Site**: [Deeptrail Site]()
+- **Gitbook**: [Deeptrail Gitbook](https://deeptrailforge.gitbook.io/deeptrailforge/)
+- **Email**: Deeptrailforge@gmail.com
 
 🧠 **Current focus**:  
 → **Deeptrail** — a Chrome extension for **AI-driven scam tracing** and **token tracking**. 
@@ -17,13 +19,15 @@ Open-source spirit meets digital forensics. Let’s forge the trail!
 
 ---
 
-## 📦 **2) Project Page: Deeptrail**
+## 📦 **Project Page: Deeptrail**
 
 ### **Deeptrail — Trace the Unseen**
 
-An **AI-powered Chrome extension** designed to track **token movements**, analyze **risk patterns**, and expose **hidden threats** in real time.
+Deeptrail is a cutting-edge AI-driven Chrome extension designed for real-time on-chain analysis and risk detection. By leveraging AI technology, Deeptrail uncovers hidden threats in the crypto market, helping traders navigate the decentralized world with confidence and precision.
 
-🔍 **Key Features**:
+Whether you're tracking suspicious token movements, identifying market manipulation, or analyzing on-chain behavior, Deeptrail provides intelligent, real-time insights to keep you ahead of the game.
+
+##🔍 **Key Features**:
 
 - **Risk Heat Map** — Visual risk indicators based on on-chain anomalies.
 - **Digital Trails** — Token movement history via DexScreener API.
