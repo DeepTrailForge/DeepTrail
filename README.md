@@ -9,7 +9,7 @@ We build smart, minimalistic extensions and tools that empower traders to naviga
 
 - **Twitter**: [@DeeptrailForge](https://twitter.com/DeeptrailForge)
 - **GitHub**: [Deeptrail GitHub](https://github.com/DeeptrailForge)
-- **Site**: [Deeptrail Site]()
+- **Site**: [Deeptrail Site](https://deeptrailforge.com)
 - **Gitbook**: [Deeptrail Gitbook](https://deeptrailforge.gitbook.io/deeptrailforge/)
 - **Email**: Deeptrailforge@gmail.com
 
@@ -26,40 +26,64 @@ Open-source spirit meets digital forensics. Let’s forge the trail!
 Deeptrail is a cutting-edge AI-driven Chrome extension designed for real-time on-chain analysis and risk detection. By leveraging AI technology, Deeptrail uncovers hidden threats in the crypto market, helping traders navigate the decentralized world with confidence and precision.
 
 Whether you're tracking suspicious token movements, identifying market manipulation, or analyzing on-chain behavior, Deeptrail provides intelligent, real-time insights to keep you ahead of the game.
-
-##🔍 **Key Features**:
-
-- **Risk Heat Map** — Visual risk indicators based on on-chain anomalies.
-- **Digital Trails** — Token movement history via DexScreener API.
-- **Phantom Fingerprint** — Custom scoring system based on trace activity.
-- **D-Sync Scan** — Token analysis by address with instant insights.
-
-🎯 **Mission**:  
-To give traders a fast, visual, and intelligent way to uncover shady tokens before it’s too late.
-
 ---
 
-## 🗺️ **Roadmap — Deeptrail**
+## 🔍 Key Features
 
-### ✅ **Phase 1 — MVP Completed**
+Deeptrail packs a powerful set of tools for crypto traders to enhance their market awareness and stay ahead of hidden threats.
 
-- [x] **Chrome Extension**: Core structure & UI in **Deeptrail palette**.
-- [x] **Token Address Input** & **DexScreener API** integration (Solana only).
-- [x] **Risk Heat Map** — Visual risk flag system.
-- [x] **Digital Trails** — Token movement history.
-- [x] **Fingerprint D-Logo** — Custom extension logo (transparent, embedded).
-- [x] Internal **analytics logic** for **AI-based pattern detection** (v1).
+### 🌍 Risk Heat Map  
+AI-generated visual heatmaps that highlight high-risk zones based on on-chain anomalies and behavioral patterns.  
+Identify clusters of manipulation, scam activity, and unusual movement in real time.
+
+### 🔗 Digital Trails  
+Follow the journey of tokens across wallets and platforms.  
+Deeptrail uses the DexScreener API to reconstruct token flows, making suspicious transfers easy to trace.
+### 👤 Phantom Fingerprint  
+A custom scoring system that evaluates the trust level of a token based on traceable historical data.  
+Factors include minting behavior, LP actions, whale entries, and early wallet activity.
+
+
+
+### 🕵️‍♂️ D-Sync Scan  
+Scan any token address to receive instant, AI-supported insights.  
+Detects red flags like bot farming, ownership loopholes, and suspicious contract traits — before they become threats.
 
 ---
+## 🗺️ Roadmap – The Path Forward
 
-### 🔮 **Phase 2 — Coming Next**
+Deeptrail is built in evolutionary phases — each expanding its trace capabilities and threat detection depth.
 
-- [ ] **Multi-chain Support** — Add **BSC** & **Ethereum**.
-- [ ] **Phantom Fingerprint Score** — Trace-based token trust metric.
-- [ ] **Live Alerts** — Real-time suspicious activity detection.
-- [ ] **Extension Settings Panel** — Toggle features & chains.
-- [ ] **Website** with integrated **Deeptrail scanner**.
-- [ ] **GitHub Actions** for automated updates.
+### ✅ Phase 1: MVP (Done)  
+**Status:** Released Q3 2025  
+Foundational trace intelligence now live.
+
+- 🧭 **Digital Trails Engine** — track token behavior across wallet hops  
+- 🧠 **Phantom Fingerprint** — detect wallet patterns and spoofing  
+- 🕸️ **D-Sync Scan** — identify sync-based exploits and silent loops  
+- 🌡️ **Risk Heat Map** — visual trace-level risk indicators  
+- 🔐 **Discord-Based TraceKey System**  
+- 🧬 **$DEEP Token Access Logic**
+
+### 🟣 Phase 2: In Progress (Active)  
+**ETA:** Q4 2025  
+Enhancing signal depth and cross-chain vision.
+
+- 🔁 **Multi-chain Support** — Ethereum & BSC integration  
+- 📡 **Live Alerts** — real-time suspicious token activity  
+- 🔗 **DexScreener API Hook** — enrich on-chain trace data  
+- ⚙️ **Signal Filter Settings** — user-defined anomaly thresholds  
+- 📌 **Expanded Role Sync System**
+
+### 🔴 Phase 3: Upcoming (Planned)  
+**ETA:** Q4 2025 – Q1 2026  
+AI-powered trace intelligence enters the field.
+
+- 🧠 **AI Trust Score** — adaptive scoring per token  
+- 🕰️ **Blockchain Time Sync** — improve accuracy in loop detection  
+- 🧬 **Predictive Threat Mapping** — emerging trace behaviors  
+- 📊 **Historic Token Flow Playback**  
+- 🌐 **Cross-Chain Risk Network View**
 
 ---
 
@@ -107,14 +131,19 @@ averagePrice: Average token price over a specified period.
 2. Digital Trails 🛤️
 Smart Logic: Tracks the movement history of a specific token using the DexScreener API.
 
-```javascript
-function trackTokenMovement(tokenAddress) {
-  return fetch(`https://api.dexscreener.com/token/${tokenAddress}`)
-    .then(response => response.json())
-    .then(data => {
-      return data.tokenMovementHistory;
-    });
-}
+```python
+import requests
+
+def track_token_movement(token_address):
+    url = f"https://api.dexscreener.com/token/{token_address}"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        data = response.json()
+        return data.get("tokenMovementHistory", [])
+    else:
+        print(f"Error fetching data: {response.status_code}")
+        return []
 ```
 Where:
 tokenAddress: The address of the token being tracked.
