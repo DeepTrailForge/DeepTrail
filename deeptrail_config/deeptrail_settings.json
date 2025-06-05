@@ -1,0 +1,5 @@
+{
+    "risk_threshold": 70,
+    "alert_volume_index": 150,
+    "wallet_signal_min": 10
+}
