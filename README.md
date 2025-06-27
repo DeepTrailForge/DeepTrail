@@ -83,21 +83,6 @@ AI-powered trace intelligence enters the field.
 
 ---
 
-## 🛠️ **Installation Instructions**
-
-1. **Download the Extension**:
-   - Visit the [Chrome Web Store](https://chrome.google.com/webstore) and search for **Deeptrail** or download it directly from our [official extension page](#).
-
-2. **Add to Chrome**:
-   - Click on the **Add to Chrome** button.
-   - In the pop-up window, click **Add Extension** to confirm.
-
-3. **Activate the Extension**:
-   - Once installed, the **Deeptrail** icon will appear in your browser toolbar.
-   - Click on the icon to open the dashboard and start using token tracking and risk analysis.
-
----
-
 ## 🔧 **Tech Stack**
 
 - **DexScreener API** — Used for token movement tracking.
