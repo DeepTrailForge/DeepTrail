@@ -3,16 +3,16 @@ import os
 import sys
 
 LOG_FILE_PATH = "logs/deeptrail_events.log"
-MAX_LOG_SIZE_MB = 5  # Авто-архивация не реализована, просто ограничитель
+MAX_LOG_SIZE_MB = 5 
 
 def ensure_log_directory():
     os.makedirs(os.path.dirname(LOG_FILE_PATH), exist_ok=True)
 
 def get_log_level_color(level: str) -> str:
     colors = {
-        "INFO": "\033[92m",    # зелёный
-        "WARN": "\033[93m",    # жёлтый
-        "ERROR": "\033[91m",   # красный
+        "INFO": "\033[92m",    
+        "WARN": "\033[93m",   
+        "ERROR": "\033[91m",   
         "RESET": "\033[0m"
     }
     return colors.get(level.upper(), "\033[0m")
