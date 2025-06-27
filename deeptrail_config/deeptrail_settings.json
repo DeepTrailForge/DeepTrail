@@ -1,32 +1,37 @@
-import json
-from typing import List, Dict
-
-with open("config.json", "r") as config_file:
-    config = json.load(config_file)
-
-RISK_THRESHOLD = config["risk_threshold"]
-ALERT_VOLUME_INDEX = config["alert_volume_index"]
-WALLET_SIGNAL_MIN = config["wallet_signal_min"]
-
-sample_data = [
-    {"token": "ABC", "volume_index": 180, "wallet_signal": 14, "risk": 75},
-    {"token": "XYZ", "volume_index": 90, "wallet_signal": 6, "risk": 40},
-    {"token": "DEF", "volume_index": 200, "wallet_signal": 22, "risk": 88},
-]
-
-def evaluate_risk(entry: Dict) -> str:
-    alerts = []
-    if entry["risk"] >= RISK_THRESHOLD:
-        alerts.append("⚠️ High Risk")
-    if entry["volume_index"] >= ALERT_VOLUME_INDEX:
-        alerts.append("📊 Volume Spike")
-    if entry["wallet_signal"] >= WALLET_SIGNAL_MIN:
-        alerts.append("🧠 Smart Wallet Activity")
-    if not alerts:
-        return "✅ No anomaly detected"
-    return " | ".join(alerts)
-
-for token_data in sample_data:
-    token = token_data["token"]
-    result = evaluate_risk(token_data)
-    print(f"Token {token}: {result}")
+{
+  "log_id": "anomaly_20250627_001",
+  "timestamp": "2025-06-27T09:43:12Z",
+  "summary": "Multiple pattern spikes detected across key tokens",
+  "signals": [
+    {
+      "type": "flashloan",
+      "volume_index": 312.5,
+      "gas_pattern": "irregular",
+      "severity": "critical"
+    },
+    {
+      "type": "wallet_convergence",
+      "active_wallets": 27,
+      "total_wallets": 80,
+      "signal_strength": 33.75,
+      "status": "strong"
+    },
+    {
+      "type": "liquidity_drain",
+      "lp_locked": false,
+      "detected_at_block": 20182391,
+      "severity": "high"
+    }
+  ],
+  "origin": "deeptrail_background",
+  "triggered_modules": [
+    "FlashDetector",
+    "WalletPulse",
+    "DrainWatcher"
+  ],
+  "actions": {
+    "alert_dispatched": true,
+    "visual_log": true,
+    "log_stored": true
+  }
+}
