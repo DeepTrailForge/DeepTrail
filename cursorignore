@@ -1,0 +1,10 @@
+# Ignore all files by default unless explicitly allowed
+*
+
+# Allow environment configs
+!.env
+!.env.local
+
+# Optionally allow source files
+!src/
+!pages/

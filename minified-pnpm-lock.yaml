@@ -1,0 +1,32 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+workspace:
+  root: true
+
+packages:
+  - name: '@0x/contract-addresses'
+    version: '8.13.0'
+  - name: '@0x/protocol-utils'
+    version: '11.24.2'
+  - name: '@ai-sdk/openai'
+    version: '1.1.4'
+  - name: '@coinbase/coinbase-sdk'
+    version: '0.13.0'
+  - name: '@solana/web3.js'
+    version: '1.98.0'
+  - name: '@jup-ag/core'
+    version: '4.0.0-beta.21'
+  - name: '@radix-ui/react-dialog'
+    version: '1.1.4'
+  - name: '@privy-io/react-auth'
+    version: '1.98.4'
+  - name: 'react'
+    version: '19.0.0'
+  - name: 'typescript'
+    version: '5.7.2'
+  - name: 'zod'
+    version: '3.24.1'
