@@ -1,0 +1,46 @@
+{
+  "log_id": "anomaly_20250627_002",
+  "timestamp": "2025-06-27T10:12:48Z",
+  "module": "DeepAnomalyCore",
+  "description": "Anomaly behavior patterns detected in volume and wallet clusters",
+  "rules_triggered": [
+    {
+      "function": "volumeSpikeIndex",
+      "input": {
+        "current_volume": 120000,
+        "average_volume": 30000
+      },
+      "output": 400,
+      "result": "🚨 Extreme Spike"
+    },
+    {
+      "function": "smartWalletRatio",
+      "input": {
+        "active": 15,
+        "total": 40
+      },
+      "output": 37.5,
+      "result": "📈 Strong Entry Signal"
+    },
+    {
+      "function": "detectFlashActivity",
+      "input": {
+        "volumes": [700, 1800, 4900, 10000]
+      },
+      "output": 3,
+      "result": "🚨 Flash Pump Risk"
+    }
+  ],
+  "severity_score": 91,
+  "status": "alert",
+  "actions": {
+    "notify_channels": [
+      "core-feed",
+      "risk-alerts"
+    ],
+    "mark_tokens": [
+      "under_suspicion"
+    ],
+    "log_chain_trace": true
+  }
+}

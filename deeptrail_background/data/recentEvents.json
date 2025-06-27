@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "type": "whale_activity",
+      "timestamp": "2025-06-27T07:44:12Z",
+      "wallet": "DEeP7r41w4lL3tXxA",
+      "details": {
+        "action": "Sold 95% of tokens",
+        "token": "So1Risky420",
+        "amount_usd": 87320.50
+      },
+      "risk_level": "high"
+    },
+    {
+      "id": "evt_002",
+      "type": "volume_spike",
+      "timestamp": "2025-06-27T07:47:03Z",
+      "token": "SOLShibaX",
+      "details": {
+        "spike_index": 322.4,
+        "previous_volume": 21400,
+        "current_volume": 69000
+      },
+      "risk_level": "extreme"
+    },
+    {
+      "id": "evt_003",
+      "type": "sybil_cluster_detected",
+      "timestamp": "2025-06-27T07:49:58Z",
+      "cluster_id": "syb7782",
+      "details": {
+        "linked_wallets": 12,
+        "interaction_pattern": "synchronized buys",
+        "token": "WEN"
+      },
+      "risk_level": "medium"
+    },
+    {
+      "id": "evt_004",
+      "type": "flashloan_pattern",
+      "timestamp": "2025-06-27T08:01:17Z",
+      "token": "SlapCoin",
+      "details": {
+        "detected_blocks": 3,
+        "volume_fluctuation": "unrealistic",
+        "gas_abnormality": true
+      },
+      "risk_level": "critical"
+    }
+  ]
+}
