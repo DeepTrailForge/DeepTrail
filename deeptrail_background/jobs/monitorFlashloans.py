@@ -1,5 +1,3 @@
-# monitorFlashloans.py - part of Deeptrail Background system
-
 import json
 import datetime
 from typing import List, Dict
