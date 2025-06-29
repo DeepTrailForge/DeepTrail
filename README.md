@@ -65,9 +65,8 @@ Foundational trace intelligence now live.
 **ETA:** Q4 2025  
 Enhancing signal depth and cross-chain vision.
 
-- 🔁 **Multi-chain Support** — Ethereum & BSC integration  
+- 🔁 **Multi-chain Support** — BSC integration  
 - 📡 **Live Alerts** — real-time suspicious token activity  
-- 🔗 **DexScreener API Hook** — enrich on-chain trace data
 - 🔐 **Discord-Based TraceKey System**  
 - ⚙️ **Signal Filter Settings** — user-defined anomaly thresholds  
 - 📌 **Expanded Role Sync System**
@@ -80,7 +79,6 @@ AI-powered trace intelligence enters the field.
 - 🕰️ **Blockchain Time Sync** — improve accuracy in loop detection  
 - 🧬 **Predictive Threat Mapping** — emerging trace behaviors  
 - 📊 **Historic Token Flow Playback**  
-- 🌐 **Cross-Chain Risk Network View**
 
 ---
 
