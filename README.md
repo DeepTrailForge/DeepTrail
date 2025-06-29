@@ -91,57 +91,7 @@ AI-powered trace intelligence enters the field.
 
 ---
 
-## 📈 **Formulas for MVP Features**
 
-### **1. Risk Heat Map** 🔥
-
-- **Smart Logic**: Calculates the **risk score** of tokens based on the historical data, including volume changes, price swings, and transactions.
-```javascript
-function calculateRiskHeatMap(tokenData) {
-  const riskFactor = (tokenData.volumeChange + tokenData.priceChange) / tokenData.averagePrice;
-  return riskFactor > 0.5 ? "High Risk" : "Low Risk";
-}
-```
-Where:
-volumeChange: Change in the token's trading volume.
-priceChange: Price change compared to the previous trading period.
-averagePrice: Average token price over a specified period.
-
-2. Digital Trails 🛤️
-Smart Logic: Tracks the movement history of a specific token using the DexScreener API.
-
-```python
-import requests
-
-def track_token_movement(token_address):
-    url = f"https://api.dexscreener.com/token/{token_address}"
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        data = response.json()
-        return data.get("tokenMovementHistory", [])
-    else:
-        print(f"Error fetching data: {response.status_code}")
-        return []
-```
-Where:
-tokenAddress: The address of the token being tracked.
-tokenMovementHistory: A history of token movements retrieved from DexScreener.
-
-3. Phantom Fingerprint 👻
-Smart Logic: Scores tokens based on the frequency and nature of traceable activities associated with the token.
-
-```javascript
-function calculateFingerprintScore(tokenData) {
-  const score = (tokenData.transactionCount / tokenData.totalAddresses) * 100;
-  return score > 75 ? "High Trust" : "Low Trust";
-}
-```
-Where:
-transactionCount: Number of transactions involving the token.
-totalAddresses: Number of unique addresses interacting with the token.
-
----
 ## 🔚 **Conclusion**
 
 **Deeptrail** is your essential tool for real-time **on-chain analysis**, **risk detection**, and **digital market tracing**. With powerful features like **risk heat maps**, **token movement tracking**, and **AI-based pattern detection**, Deeptrail equips crypto traders with the insights needed to navigate the complex and often unpredictable world of DeFi.
