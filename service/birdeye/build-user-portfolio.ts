@@ -9,8 +9,8 @@ import { getTokenMetadata } from "./get-token-metadata"
 import type { PortfolioResponse, Portfolio, PortfolioItem } from "./types"
 
 const normalizeAddress = (addr: string) =>
-  addr === "So11111111111111111111111111111111111111111"
-    ? "So11111111111111111111111111111111111111112"
+  addr === ""
+    ? ""
     : addr
 
 export async function buildUserPortfolio(
