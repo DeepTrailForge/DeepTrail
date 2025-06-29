@@ -35,7 +35,6 @@ def log_event(message: str, level: str = "INFO"):
         print(get_log_level_color("ERROR") + f"[{timestamp}] [ERROR] Failed to write log: {e}" + get_log_level_color("RESET"))
         print(get_log_level_color(level) + log_line.strip() + get_log_level_color("RESET"))
 
-# Примеры:
 log_event("Deeptrail background system initialized.")
 log_event("Anomaly pattern detected in TX cluster.", "warn")
 log_event("Critical failure: unable to sync state cache.", "error")
