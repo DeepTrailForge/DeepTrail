@@ -85,8 +85,7 @@ AI-powered trace intelligence enters the field.
 ## 🔧 **Tech Stack**
 
 - **DexScreener / Birdeye / Streamflow API** — Used for token movement tracking.
-- **JavaScript / HTML / CSS** — For building the Chrome extension UI.
-- **REST APIs / GraphQL** — For external service integrations.
+- **Python / TypeScript / React / JavaScript / HTML / CSS** — For building the Chrome extension UI.
 - **WebSockets** — For real-time data updates.
 - **TensorFlow** — For AI-based pattern detection.
 
