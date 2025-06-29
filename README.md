@@ -58,7 +58,7 @@ Foundational trace intelligence now live.
 - 🧠 **Phantom Fingerprint** — detect wallet patterns and spoofing  
 - 🕸️ **D-Sync Scan** — identify sync-based exploits and silent loops  
 - 🌡️ **Risk Heat Map** — visual trace-level risk indicators  
-- 🔐 **Discord-Based TraceKey System**  
+- 🔗 **API Hook** — enrich on-chain trace data
 - 🧬 **$DEEP Token Access Logic**
 
 ### 🟣 Phase 2: In Progress (Active)  
@@ -67,7 +67,8 @@ Enhancing signal depth and cross-chain vision.
 
 - 🔁 **Multi-chain Support** — Ethereum & BSC integration  
 - 📡 **Live Alerts** — real-time suspicious token activity  
-- 🔗 **DexScreener API Hook** — enrich on-chain trace data  
+- 🔗 **DexScreener API Hook** — enrich on-chain trace data
+- 🔐 **Discord-Based TraceKey System**  
 - ⚙️ **Signal Filter Settings** — user-defined anomaly thresholds  
 - 📌 **Expanded Role Sync System**
 
