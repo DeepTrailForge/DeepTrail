@@ -1,27 +1,52 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Stats</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scan Result</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="backBtn" style="background-color: #3C0F13; color: white; margin-top: 10px; margin-left: 10px; position: absolute;">Back</button>
-  
+  <button id="backBtn" class="btn back">← Back</button>
+
   <div class="stats-container">
-    <img src="logo-tsunami.png" class="logo" style="width: 150px; height: auto; margin-top: 30px;" />
-    <h1 class="title">Scan result</h1>
-    <div id="tokenDisplay" class="token-address">Token: <span id="userTokenInput"></span></div>
+    <img src="logo-tsunami.png" alt="TsunamiSense Logo" class="logo" />
+
+    <h1 class="title">Scan Result</h1>
+
+    <div id="tokenDisplay" class="token-address">
+      Token: <span id="userTokenInput">—</span>
+    </div>
+
     <div class="result-box">
-      <div class="result-row"><span class="label">RiskLevel: High</span><span class="value" text=""></span></div>
-      <div class="result-row"><span class="label">DepthScore:</span><span class="value" id="tokentrend"></span></div>
+      <div class="result-row">
+        <span class="label">Risk Level:</span>
+        <span class="value" id="riskLevel">—</span>
+      </div>
+      <div class="result-row">
+        <span class="label">Tsunami Score:</span>
+        <span class="value" id="tsunamiScore">—</span>
+      </div>
+      <div class="result-row">
+        <span class="label">Volume Spike:</span>
+        <span class="value" id="volumeSpike">—</span>
+      </div>
+      <div class="result-row">
+        <span class="label">Wallet Activity:</span>
+        <span class="value" id="walletActivity">—</span>
+      </div>
+      <div class="result-row">
+        <span class="label">Whale Alerts:</span>
+        <span class="value" id="whaleAlerts">—</span>
+      </div>
     </div>
   </div>
-  <script src="stats.js"></script>
-  
-  <div class="example-container" style="position: absolute; top: 10px; right: 10px;">
-    <button id="exampleBtn" style="background-color: #3C0F13; color: white; border: none; padding: 10px; cursor: pointer;">Example</button>
+
+  <div class="example-container">
+    <button id="exampleBtn" class="btn example">Example</button>
   </div>
+
+  <script src="stats.js"></script>
 </body>
 </html>
