@@ -1,4 +1,4 @@
-import type { Wallet } from "@coinbase/coinbase-sdk"
+import type { Wallet } from "@solscan/solscan-sdk"
 import type { VaultResult } from "@/ai"
 import type { GetWalletDetailsArgumentsType, GetWalletDetailsResultBodyType } from "./types"
 
