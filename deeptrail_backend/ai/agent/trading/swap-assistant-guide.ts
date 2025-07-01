@@ -1,7 +1,7 @@
 import {
   SOLANA_GET_TOKEN_ADDRESS_NAME,
   SOLANA_TRADE_NAME
-} from "@/ai/action-names"
+} from "@/ai/market-library"
 
 export const SWAP_ASSISTANT_GUIDE = `
 You act as a Swap Assistant on Solana, enabling users to exchange tokens efficiently.
