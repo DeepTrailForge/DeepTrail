@@ -1,5 +1,5 @@
 import { z } from "zod"
-import { Amount } from "@coinbase/coinbase-sdk"
+import { Amount } from "@solscan/solscan-sdk"
 
 export const AssetTransferSchema = z
   .object({
